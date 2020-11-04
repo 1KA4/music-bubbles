@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+}
+.pad{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.title h1{
+    margin: 50px 0 30px 0;
+    font-size: 40px;
+    text-align: center;
+}
+.title p{
+    font-size:20px;
+    text-align: center;
+}
+.pads{
+    display: flex;
+    width: 100%;
+}
+.pads > div{
+    height: 100px;
+    font-size: 40px;
+    text-align: center;
+    line-height: 100px;
+    flex: 1;
+}
+.pads > div:hover{
+    cursor: pointer;
+}
+.pad1{
+    background-color: aqua;
+}
+.pad2{
+    background-color: yellow;
+}
+.pad3{
+    background-color: yellowgreen;
+}
+.pad4{
+    background-color: lightcoral;
+}
+.pad5{
+    background-color: cornflowerblue;
+}
+.pad6{
+    background-color: green;
+}
+.bubbles > div{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+@keyframes jump{ 
+    0% {
+        bottom: 0;
+        left: 20%;
+    }
+    50% {
+        bottom: 50%;
+        left: 50%;
+    }
+    100% {
+        bottom: 0%;
+        left: 80%;
+    }
+}
